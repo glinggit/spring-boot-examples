@@ -1,0 +1,261 @@
+2018-05-15 13:46:37.591  INFO 3136 --- [restartedMain] com.neo.Application                      : Starting Application on DESKTOP-EKO55UB with PID 3136 (C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web\target\classes started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 13:46:37.591  INFO 3136 --- [restartedMain] com.neo.Application                      : No active profile set, falling back to default profiles: default
+2018-05-15 13:46:37.591  INFO 3136 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@275e3f39: startup date [Tue May 15 13:46:37 CST 2018]; root of context hierarchy
+2018-05-15 13:46:37.935  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:46:37.951  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:46:37.967  INFO 3136 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserRepository.
+2018-05-15 13:46:38.107  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9062 (http)
+2018-05-15 13:46:38.123  INFO 3136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-15 13:46:38.123  INFO 3136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-05-15 13:46:38.140  INFO 3136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-15 13:46:38.140  INFO 3136 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 549 ms
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'MyFilter' to urls: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
+2018-05-15 13:46:38.218  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-15 13:46:38.342  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:46:38.389  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:46:38.530  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@275e3f39: startup date [Tue May 15 13:46:37 CST 2018]; root of context hierarchy
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:46:38.546  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:46:38.561  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:46:38.671  INFO 3136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-15 13:46:38.717  INFO 3136 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-15 13:46:38.717  INFO 3136 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 13:46:38.717  INFO 3136 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 13:46:38.717  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9062 (http)
+2018-05-15 13:46:38.733  INFO 3136 --- [restartedMain] com.neo.Application                      : Started Application in 1.204 seconds (JVM running for 7628.113)
+2018-05-15 13:47:48.169  INFO 3136 --- [Thread-40] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@275e3f39: startup date [Tue May 15 13:46:37 CST 2018]; root of context hierarchy
+2018-05-15 13:47:48.176  INFO 3136 --- [Thread-40] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 13:47:48.176  INFO 3136 --- [Thread-40] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-15 13:47:48.176  INFO 3136 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:47:48.519  INFO 3136 --- [restartedMain] com.neo.Application                      : Starting Application on DESKTOP-EKO55UB with PID 3136 (C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web\target\classes started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 13:47:48.519  INFO 3136 --- [restartedMain] com.neo.Application                      : No active profile set, falling back to default profiles: default
+2018-05-15 13:47:48.519  INFO 3136 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7be9ccfe: startup date [Tue May 15 13:47:48 CST 2018]; root of context hierarchy
+2018-05-15 13:47:48.957  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:47:48.973  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:47:48.988  INFO 3136 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserRepository.
+2018-05-15 13:47:49.144  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9062 (http)
+2018-05-15 13:47:49.144  INFO 3136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-15 13:47:49.144  INFO 3136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-05-15 13:47:49.160  INFO 3136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-15 13:47:49.160  INFO 3136 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 641 ms
+2018-05-15 13:47:49.238  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-15 13:47:49.238  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-05-15 13:47:49.254  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-15 13:47:49.254  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-15 13:47:49.254  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-15 13:47:49.255  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'MyFilter' to urls: [/*]
+2018-05-15 13:47:49.255  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
+2018-05-15 13:47:49.255  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-15 13:47:49.383  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:47:49.446  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:47:49.587  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7be9ccfe: startup date [Tue May 15 13:47:48 CST 2018]; root of context hierarchy
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:47:49.602  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:47:49.618  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:47:49.727  INFO 3136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-15 13:47:49.790  INFO 3136 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-15 13:47:49.805  INFO 3136 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 13:47:49.805  INFO 3136 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 13:47:49.805  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9062 (http)
+2018-05-15 13:47:49.821  INFO 3136 --- [restartedMain] com.neo.Application                      : Started Application in 1.333 seconds (JVM running for 7699.201)
+2018-05-15 13:47:58.688  INFO 3136 --- [http-nio-9062-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-15 13:47:58.697  INFO 3136 --- [http-nio-9062-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-15 13:47:58.711  INFO 3136 --- [http-nio-9062-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-05-15 13:57:00.044  INFO 16800 --- [main] com.neo.domain.UserRepositoryTests       : Starting UserRepositoryTests on DESKTOP-EKO55UB with PID 16800 (started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 13:57:00.044  INFO 16800 --- [main] com.neo.domain.UserRepositoryTests       : No active profile set, falling back to default profiles: default
+2018-05-15 13:57:00.426  INFO 16800 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:00 CST 2018]; root of context hierarchy
+2018-05-15 13:57:01.442  INFO 16800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:57:01.536  INFO 16800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:57:01.568  INFO 16800 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserRepository.
+2018-05-15 13:57:03.194  INFO 16800 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:57:04.310  INFO 16800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:57:05.662  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:00 CST 2018]; root of context hierarchy
+2018-05-15 13:57:05.778  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:57:05.794  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 13:57:05.794  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:57:05.810  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 13:57:05.810  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 13:57:05.810  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 13:57:05.810  INFO 16800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 13:57:05.872  INFO 16800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:05.872  INFO 16800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:05.935  INFO 16800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:06.810  INFO 16800 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 13:57:06.842  INFO 16800 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 13:57:06.857  INFO 16800 --- [main] com.neo.domain.UserRepositoryTests       : Started UserRepositoryTests in 7.188 seconds (JVM running for 8.654)
+2018-05-15 13:57:07.279  INFO 16800 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:00 CST 2018]; root of context hierarchy
+2018-05-15 13:57:07.295  INFO 16800 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 13:57:07.373  INFO 16800 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:57:51.009  INFO 17256 --- [main] com.neo.domain.UserRepositoryTests       : Starting UserRepositoryTests on DESKTOP-EKO55UB with PID 17256 (started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 13:57:51.009  INFO 17256 --- [main] com.neo.domain.UserRepositoryTests       : No active profile set, falling back to default profiles: default
+2018-05-15 13:57:51.384  INFO 17256 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:51 CST 2018]; root of context hierarchy
+2018-05-15 13:57:52.368  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:57:52.454  INFO 17256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 13:57:52.486  INFO 17256 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserRepository.
+2018-05-15 13:57:54.164  INFO 17256 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:57:55.500  INFO 17256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 13:57:56.888  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:51 CST 2018]; root of context hierarchy
+2018-05-15 13:57:57.029  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 13:57:57.029  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:57:57.044  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 13:57:57.060  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 13:57:57.060  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 13:57:57.060  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 13:57:57.060  INFO 17256 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 13:57:57.107  INFO 17256 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:57.107  INFO 17256 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:57.169  INFO 17256 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 13:57:58.091  INFO 17256 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 13:57:58.114  INFO 17256 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 13:57:58.145  INFO 17256 --- [main] com.neo.domain.UserRepositoryTests       : Started UserRepositoryTests in 7.642 seconds (JVM running for 8.578)
+2018-05-15 13:57:58.332 ERROR 17256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'aa1' for key 'UK_ob8kqyqqgmefl0aco34akdtpe'
+2018-05-15 13:57:58.395  INFO 17256 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 13:57:51 CST 2018]; root of context hierarchy
+2018-05-15 13:57:58.410  INFO 17256 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 13:57:58.410  INFO 17256 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:05:21.587  INFO 3136 --- [Thread-49] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7be9ccfe: startup date [Tue May 15 13:47:48 CST 2018]; root of context hierarchy
+2018-05-15 14:05:21.592  INFO 3136 --- [Thread-49] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 14:05:21.592  INFO 3136 --- [Thread-49] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-15 14:05:21.592  INFO 3136 --- [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:05:21.967  INFO 3136 --- [restartedMain] com.neo.Application                      : Starting Application on DESKTOP-EKO55UB with PID 3136 (C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web\target\classes started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 14:05:21.967  INFO 3136 --- [restartedMain] com.neo.Application                      : No active profile set, falling back to default profiles: default
+2018-05-15 14:05:21.967  INFO 3136 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f161c3a: startup date [Tue May 15 14:05:21 CST 2018]; root of context hierarchy
+2018-05-15 14:05:22.342  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:05:22.358  INFO 3136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:05:22.358  INFO 3136 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserDao.
+2018-05-15 14:05:22.514  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9062 (http)
+2018-05-15 14:05:22.514  INFO 3136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-15 14:05:22.514  INFO 3136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-05-15 14:05:22.530  INFO 3136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-15 14:05:22.530  INFO 3136 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 563 ms
+2018-05-15 14:05:22.608  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-15 14:05:22.622  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-05-15 14:05:22.622  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-15 14:05:22.622  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-15 14:05:22.622  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-15 14:05:22.623  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'MyFilter' to urls: [/*]
+2018-05-15 14:05:22.623  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'remoteIpFilter' to: [/*]
+2018-05-15 14:05:22.623  INFO 3136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-15 14:05:22.753  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:05:22.800  INFO 3136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:05:22.956  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f161c3a: startup date [Tue May 15 14:05:21 CST 2018]; root of context hierarchy
+2018-05-15 14:05:22.956  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:05:22.956  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 14:05:22.956  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:05:22.956  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 14:05:22.972  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 14:05:22.972  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 14:05:22.972  INFO 3136 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 14:05:22.972  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:05:22.972  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:05:22.987  INFO 3136 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:05:23.097  INFO 3136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-15 14:05:23.144  INFO 3136 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-15 14:05:23.144  INFO 3136 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 14:05:23.144  INFO 3136 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 14:05:23.159  INFO 3136 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9062 (http)
+2018-05-15 14:05:23.159  INFO 3136 --- [restartedMain] com.neo.Application                      : Started Application in 1.239 seconds (JVM running for 8752.543)
+2018-05-15 14:06:39.824  INFO 16812 --- [main] com.neo.domain.UserDaoTests              : Starting UserDaoTests on DESKTOP-EKO55UB with PID 16812 (started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 14:06:39.824  INFO 16812 --- [main] com.neo.domain.UserDaoTests              : No active profile set, falling back to default profiles: default
+2018-05-15 14:06:40.199  INFO 16812 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:06:40 CST 2018]; root of context hierarchy
+2018-05-15 14:06:41.199  INFO 16812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:06:41.266  INFO 16812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:06:41.281  INFO 16812 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserDao.
+2018-05-15 14:06:42.926  INFO 16812 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:06:44.043  INFO 16812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:06:45.663  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:06:40 CST 2018]; root of context hierarchy
+2018-05-15 14:06:45.767  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:06:45.767  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 14:06:45.782  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:06:45.782  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 14:06:45.782  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 14:06:45.782  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 14:06:45.782  INFO 16812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 14:06:45.829  INFO 16812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:06:45.829  INFO 16812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:06:45.876  INFO 16812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:06:46.611  INFO 16812 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 14:06:46.642  INFO 16812 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 14:06:46.673  INFO 16812 --- [main] com.neo.domain.UserDaoTests              : Started UserDaoTests in 7.248 seconds (JVM running for 8.147)
+2018-05-15 14:06:46.801 ERROR 16812 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'aa@126.com' for key 'UK_d2ia11oqhsynodbsi46m80vfc'
+2018-05-15 14:06:46.832  INFO 16812 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:06:40 CST 2018]; root of context hierarchy
+2018-05-15 14:06:46.863  INFO 16812 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 14:06:46.910  INFO 16812 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:07:14.719  INFO 16540 --- [main] com.neo.domain.UserDaoTests              : Starting UserDaoTests on DESKTOP-EKO55UB with PID 16540 (started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 14:07:14.734  INFO 16540 --- [main] com.neo.domain.UserDaoTests              : No active profile set, falling back to default profiles: default
+2018-05-15 14:07:15.094  INFO 16540 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:07:15 CST 2018]; root of context hierarchy
+2018-05-15 14:07:16.047  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:07:16.122  INFO 16540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 14:07:16.153  INFO 16540 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserDao.
+2018-05-15 14:07:17.766  INFO 16540 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:07:18.917  INFO 16540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:07:20.244  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:07:15 CST 2018]; root of context hierarchy
+2018-05-15 14:07:20.362  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 14:07:20.378  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:07:20.378  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 14:07:20.394  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 14:07:20.394  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 14:07:20.394  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 14:07:20.394  INFO 16540 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 14:07:20.456  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:07:20.456  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:07:20.534  INFO 16540 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 14:07:21.269  INFO 16540 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 14:07:21.301  INFO 16540 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 14:07:21.316  INFO 16540 --- [main] com.neo.domain.UserDaoTests              : Started UserDaoTests in 6.967 seconds (JVM running for 7.831)
+2018-05-15 14:07:21.535 ERROR 16540 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'bb21' for key 'UK_ob8kqyqqgmefl0aco34akdtpe'
+2018-05-15 14:07:21.582  INFO 16540 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@51dcb805: startup date [Tue May 15 14:07:15 CST 2018]; root of context hierarchy
+2018-05-15 14:07:21.598  INFO 16540 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 14:07:21.644  INFO 16540 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 14:08:49.772  INFO 3136 --- [http-nio-9062-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-15 14:08:49.772  INFO 3136 --- [http-nio-9062-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-15 14:08:49.791  INFO 3136 --- [http-nio-9062-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2018-05-15 15:26:30.377  INFO 17384 --- [main] com.neo.util.TestRedis                   : Starting TestRedis on DESKTOP-EKO55UB with PID 17384 (started by YuanYuanSun in C:\_IBM\gitRepository\spring-boot-examples\spring-boot-web)
+2018-05-15 15:26:30.377  INFO 17384 --- [main] com.neo.util.TestRedis                   : No active profile set, falling back to default profiles: default
+2018-05-15 15:26:30.877  INFO 17384 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@29e495ff: startup date [Tue May 15 15:26:30 CST 2018]; root of context hierarchy
+2018-05-15 15:26:32.013  INFO 17384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 15:26:32.102  INFO 17384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-15 15:26:32.149  INFO 17384 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.neo.domain.UserDao.
+2018-05-15 15:26:34.316  INFO 17384 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-15 15:26:35.918  INFO 17384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 15:26:37.692  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@29e495ff: startup date [Tue May 15 15:26:30 CST 2018]; root of context hierarchy
+2018-05-15 15:26:37.822  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/uid]}" onto java.lang.String com.neo.web.HelloController.uid(javax.servlet.http.HttpSession)
+2018-05-15 15:26:37.837  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/h1/hello]}" onto public java.lang.String com.neo.web.HelloController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 15:26:37.853  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi]}" onto public java.lang.String com.neo.web.ThymeleafController.hello(java.util.Locale,org.springframework.ui.Model)
+2018-05-15 15:26:37.868  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.neo.domain.User com.neo.web.UserController.getUser()
+2018-05-15 15:26:37.868  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUsers]}" onto public java.util.List<com.neo.domain.User> com.neo.web.UserController.getUsers()
+2018-05-15 15:26:37.884  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-15 15:26:37.884  INFO 17384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-15 15:26:37.978  INFO 17384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 15:26:37.978  INFO 17384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 15:26:38.040  INFO 17384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-15 15:26:39.181  INFO 17384 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-05-15 15:26:39.208  INFO 17384 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-05-15 15:26:39.224  INFO 17384 --- [main] com.neo.util.TestRedis                   : Started TestRedis in 9.41 seconds (JVM running for 10.672)
+2018-05-15 15:26:40.494  INFO 17384 --- [Thread-6] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@29e495ff: startup date [Tue May 15 15:26:30 CST 2018]; root of context hierarchy
+2018-05-15 15:26:40.541  INFO 17384 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 15:26:40.572  INFO 17384 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-15 18:02:32.381  INFO 3136 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-05-15 18:02:32.400  INFO 3136 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f161c3a: startup date [Tue May 15 14:05:21 CST 2018]; root of context hierarchy
+2018-05-15 18:02:32.416  INFO 3136 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-05-15 18:02:32.431  INFO 3136 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-15 18:02:32.431  INFO 3136 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

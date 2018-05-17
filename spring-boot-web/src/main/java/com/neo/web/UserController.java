@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.neo.domain.User;
-import com.neo.domain.UserRepository;
+import com.neo.domain.UserDao;
 
 @RestController
 public class UserController {
 	
 	@Autowired
-	private UserRepository userRepository;
+	private UserDao userRepository;
 	
     @RequestMapping("/getUser")
     @Cacheable(value="user-key")
